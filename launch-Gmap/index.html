@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="d3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="OpenLayers.js" type="text/javascript"></script>
+<script src="InlineXhtml.js" type="text/javascript"></script>
+<script src="ScalableInlineXhtml.js" type="text/javascript"></script>
+<script src="bootstrap.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="theme/default/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script>
+'use strict'
+var task = {"width":4320, "height":3145};
+var scaleFactor = 0.7;
+var labelShown;
+var labelShown_default = 3;
+var highestLevel = 6;
+var VIEW_ZOOM_LEVELS = highestLevel;
+var dataset;
+console.log('once')
+
+$(document).ready(function() {
+	// load dataset
+	d3.csv('allRef.csv', function(error, data) {	
+		data.forEach(function(d) {
+			var pos = d.compute_pos.split(",");
+			d.pos = [+pos[0], +pos[1]];	
+			var mi = d.mi.split(",");
+			d.mi = mi[1];
+			d.parent = mi[0];
+		});
+		dataset = data;
+	});
+	
+	// display map
+	var map = display_map("map_refine_layout_js.svg", task.width, task.height);
+
+	labelShown = labelShown_default;
+	$( "#set-labels" ).change(function() {
+		labelShown= $('input[name="set-labels"]').val();
+		$(".node").remove();
+		var levelVisible;
+		if (map.zoom == "undefined"){ levelVisible = highestLevel }
+		else { levelVisible = highestLevel - Math.floor(map.zoom); }
+		drawNode(highestLevel - Math.floor(map.zoom));
+	});
+			
+	// register interaction
+	map.events.register("zoomend", map, function(){
+		var levelVisible = highestLevel - Math.floor(map.zoom);
+		var textScale = Math.pow(scaleFactor, map.zoom);
+		
+		$(".node").remove();
+		$(".edge").remove();
+		$(".tooltip").remove();
+		
+		for (var i = highestLevel; i > 0; i--){
+			if (i > levelVisible) { drawEdge(i, "#888"); continue; }
+			if ( i < levelVisible && i > levelVisible-2) { drawEdge(i, "#888"); continue;}
+			if (i == levelVisible) { drawEdge(i, "#666"); continue; }
+			else { continue; }
+		}
+		drawNode(levelVisible);
+	});
+	
+});
+
+
+// add tooltips
+function drawTool(){
+	$(".node text").tooltip({
+		'container': 'body',
+		'placement': 'right'
+	});
+}
+// some functions
+function drawNode(level){
+	var data = dataset.filter(function(row) { 
+		return row["model_level"] == level.toString();
+	});	
+	var graph = d3.select("#graph0"); 
+	var nodegroup = graph.selectAll(".node.L"+level)
+					.data(data)
+					.enter()
+					.append("g")
+					.each(function (d) {
+						d3.select(this).attr({
+						  class: "node L" + d.model_level,
+						  id : d.name,
+						  transform: "translate(" + [d.pos[0], d.pos[1]] + ")",
+						});
+					});
+					
+	var textScale = Math.pow(scaleFactor, highestLevel - level); 
+	var texts = nodegroup.append("text").each( function(d) {
+			var el = d3.select(this);
+			var words = d.label.split(",");
+			for (var i = 0; i < labelShown; i++) {
+				var tspan = el.append('tspan').text(words[i]);
+				if (i > 0)
+					tspan.attr('x', 0).attr('dy', '120');
+				}	
+			})
+			.attr("text-anchor", "middle")
+			.attr("transform", "scale(" + textScale + ")")
+			.attr("title", function(d){ 
+				var title = d.label.split(",").join(" ");
+				return title;
+			});
+	
+	drawTool();
+}
+
+function drawEdge(level, color){
+	var data = dataset.filter(function(row) { 
+		return row["model_level"] == level.toString();
+	});	
+	var graph = d3.select("#graph0"); 
+	var edgegroup = graph.selectAll(".edge.L"+level)
+			.data(data)
+			.enter()
+			.append("path")
+			.each(function (d) {
+				var parent = $.grep(dataset, function(e){ return e.name == d.parent; });
+				if (parent == "") { parent = [d]; }
+				d3.select(this)
+					.attr("class","edge L" + d.model_level)
+					.attr("id", function(d){ d.name })
+					.attr("d", function(d){
+						var x1 = d.pos[0];
+						var y1 = d.pos[1];
+						var x2 = parent[0].pos[0];
+						var y2 = parent[0].pos[1];
+						var dx = x1 - x2,
+							dy = y1 - y2,
+							dr = Math.sqrt(dx * dx + dy * dy);
+						return "M" + x1 + "," + y1
+								+ "A" +  dr + "," + dr 
+								+ " 0 0,1 " + x2 + "," + y2;
+					})
+				})
+			.attr("fill", "none")
+			.attr('stroke-width', function(d) { return d.mi*10; })
+			.attr("stroke", color);
+}
+
+function display_map(map_url, width, height) {
+	var scale0 = Math.max(height/$(".olMap").height(), width/($(".olMap").width()));
+	var res = [scale0];
+	for (var i = 1; i < VIEW_ZOOM_LEVELS; i++)
+		res.push(res[i-1] * scaleFactor);
+
+    var bounds = new OpenLayers.Bounds(0, -1 * height, width, 0);
+    var map_options = {
+        controls:[
+            new OpenLayers.Control.Navigation(),
+            new OpenLayers.Control.PanZoomBar(),
+                ],
+        fractionalZoom: true,
+        resolutions: res,
+    }
+    var map = new OpenLayers.Map("map", map_options);
+	
+    var gmap = new OpenLayers.Layer.ScalableInlineXhtml(
+        "GMap",
+        map_url,
+        bounds,
+        null,
+        {isBaseLayer: true, opacity: '1.0'});
+
+    var svg = $('svg');
+    gmap.adjustBounds(bounds);
+    map.addLayers([gmap]);
+    map.zoomToExtent(bounds);
+	
+	return map
+} 
+
+
+
+
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">Topic Tree Visualization</div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+			   <form class="navbar-form navbar-left" id="set-labels" role="search" >
+				<div class="form-group">
+				  <input type="text" name="set-labels" class="form-control" placeholder="NO. labels...">
+				</div>
+				<button type="button" id= "set-labels" class="btn btn-default">Set</button>
+			 </form>
+			  </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+	
+	<div id="map" class="olMap jumbotron">
+	<script>
+		var el = document.getElementById('map');
+		el.style.height = (window.innerHeight-80) + "px";
+	</script>
+</body>
+</html>
+

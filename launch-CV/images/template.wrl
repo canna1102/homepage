@@ -1,0 +1,106 @@
+#VRML V2.0 utf8
+Shape 
+{
+	appearance Appearance 
+	{
+		texture ImageTexture 
+		{
+			url "http://ihome.ust.hk/~yyangao/images/1.png"
+		}
+	}
+	geometry IndexedFaceSet 
+	{
+		coord Coordinate 
+		{
+			point 
+			[
+300.000 0.000 0.000
+0.000 0.000 0.000
+0.000 0.000 183.000
+300.000 0.000 181.892			]
+		}
+		coordIndex [0, 1, 2, 3, -1]
+		texCoord TextureCoordinate 
+		{
+			point 
+			[
+				 0.000000 0.000000,
+				 1.000000 0.000000,
+				 1.000000 1.000000,
+				 0.000000 1.000000,
+			]
+		}
+		texCoordIndex [0, 1, 2, 3, -1]
+		solid FALSE
+	}
+}
+Shape 
+{
+	appearance Appearance 
+	{
+		texture ImageTexture 
+		{
+			url "http://ihome.ust.hk/~yyangao/images/2.png"
+		}
+	}
+	geometry IndexedFaceSet 
+	{
+		coord Coordinate 
+		{
+			point 
+			[
+0.000 0.000 0.000
+0.000 400.000 0.000
+0.000 400.000 180.698
+0.000 0.000 183.000			]
+		}
+		coordIndex [0, 1, 2, 3, -1]
+		texCoord TextureCoordinate 
+		{
+			point 
+			[
+				 0.000000 0.000000,
+				 1.000000 0.000000,
+				 1.000000 1.000000,
+				 0.000000 1.000000,
+			]
+		}
+		texCoordIndex [0, 1, 2, 3, -1]
+		solid FALSE
+	}
+}
+Shape 
+{
+	appearance Appearance 
+	{
+		texture ImageTexture 
+		{
+			url "http://ihome.ust.hk/~yyangao/images/3.png"
+		}
+	}
+	geometry IndexedFaceSet 
+	{
+		coord Coordinate 
+		{
+			point 
+			[
+300.000 401.935 181.892
+0.000 400.000 180.698
+0.000 0.000 183.000
+300.000 0.000 181.892			]
+		}
+		coordIndex [0, 1, 2, 3, -1]
+		texCoord TextureCoordinate 
+		{
+			point 
+			[
+				 0.000000 0.000000,
+				 1.000000 0.000000,
+				 1.000000 1.000000,
+				 0.000000 1.000000,
+			]
+		}
+		texCoordIndex [0, 1, 2, 3, -1]
+		solid FALSE
+	}
+}

@@ -1,0 +1,25 @@
+polyline {
+	vector-effect: non-scaling-stroke;
+	stroke: #000000;
+	opacity: 0.1;
+}
+
+.edge {
+	vector-effect: non-scaling-stroke;
+	vector-effect: non-scaling-stroke;
+	opacity: 0.5;
+}
+
+text {
+	font-size: 120px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
+}
+
+.olControlPanZoomBar {	
+	position: absolute !important;
+	top: auto !important;
+	left: auto !important;
+    bottom: 180px !important;
+    right: 50px !important;
+}
