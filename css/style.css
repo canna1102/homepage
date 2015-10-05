@@ -323,6 +323,11 @@ a, a:hover{
 	display: block !important;
 }
 
+.portfolio-img>img {
+	width: 70%;
+	display: block;
+	margin: auto;
+}
 /*  ----------------------------------------------------------
 [5. #resume]
 ----------------------------------------------------------  */
