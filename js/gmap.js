@@ -1,21 +1,7 @@
-var myCenter=new google.maps.LatLng(22.3364,114.26543);
+var map = L.map('google-container',{
+    'attributionControl': false
+}).setView([22.26, 114.13], 15);
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:14,
-  mapTypeId:google.maps.MapTypeId.ROADMAP,
-  streetViewControl:false
-  };
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
 
-var map=new google.maps.Map(document.getElementById("google-container"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
+L.marker([22.26, 114.13]).addTo(map);
