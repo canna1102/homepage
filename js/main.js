@@ -37,7 +37,11 @@ console.profile();
 			$("#resume").toggleClass("full").toggleClass("full-height");
 			$("#activity, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
-			$(this).hide();			
+			$(this).hide();
+
+			setTimeout(function(){
+				if ($("#resume").hasClass("full")) doneResizing();
+			}, 300);
 		});
 
 		$("#resume .close-icon").on("click", function() {
@@ -201,6 +205,55 @@ console.profile();
 		});
 
 	});
+
+
+	$(window).resize(function() {
+		if ($("#resume").hasClass("full")) doneResizing();
+	});
+
+	function doneResizing(){
+		var window_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+		var container_width = $("#skill-visualization").width();
+		var legendOffsetG = d3.select(".skill-legend").select("g");
+
+		if (window_width <= 1024){
+			resizeToNewRow();
+		} else {
+			var svg_width = container_width - 200;
+			if (svg_width < 0) {debugger}
+			d3.select(".skill-bubble").attr("width", svg_width);
+			var svg_height = $(".skill-bubble").height();
+			if (svg_height > 240) {
+				d3.select(".skill-legend")
+					.attr("height", svg_height)
+					.attr("width", 190)
+					.attr("viewBox", "0 0 200 190");
+				var legendOffset =  (svg_height - 210)/2;
+				legendOffsetG.attr("transform", "translate(0,"+ legendOffset + ")");
+
+				d3.select(".legendSize").attr("transform", "translate(110, 45)");
+				d3.select(".legendQuant").attr("transform", "translate(20,120)");
+			}
+			else {
+				resizeToNewRow();
+			}
+		}
+
+		function resizeToNewRow(){
+			d3.select(".skill-bubble").attr("width", container_width);
+			d3.select(".skill-legend")
+				.attr("width", container_width)
+				.attr("height", 130)
+				.attr("viewBox", "130 0 150 120");
+			legendOffsetG.attr("transform", "translate(0,0)");
+
+
+			d3.select(".legendSize").attr("transform", "translate(110, 45)");
+			d3.select(".legendQuant").attr("transform", "translate(190, 25)");
+		}
+	}
+
+
 
 })(jQuery);
 

@@ -11,7 +11,7 @@ polyline {
 }
 
 text {
-	font-size: 120px;
+	font-size: 90px;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
 }

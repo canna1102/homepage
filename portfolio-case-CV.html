@@ -5,18 +5,15 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/blue.css">
-    <link rel="stylesheet" href="css/preloader.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/blue.css">
+	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
 
-	<!-- Google Font link -->
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Bilbo' rel='stylesheet' type='text/css'>
 	
 </head>
 <body>
@@ -44,21 +41,20 @@
 				<div class="summary">
 					<img class="big-image" src="img/photo.jpg" alt="Profile Picture">
 					<div class="occupation">
-						<p>Hello, my name is <span id = "name_span">YANG, Yi</span>.</p>
-						<p>
-							I am a data visualization researcher living in Hong Kong.
-							This is my personal website, where I post photos, videos and live demos of my visual data analytics projects to record my work experience.</p>
+						<div class = "occupation_name">Hi, I am <span id = "name_span">YANG, Yi</span></div>
+						<div class = "occupation_title">Data Visualization Researcher & Engineer</div>
+						<hr class="hr1">
+						<div class = "occupation_description">Designs and develops web-based data visualization system. Passionate at visual data analytics. Lives in Hong Kong.</div>
+
+						<ul class="social">
+							<li><a href="img/wechat.jpg"  target="_blank"  class="fa fa-weixin"></a></li>
+							<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"  target="_blank" class="fa fa-linkedin"></a></li>
+							<li><a href="https://bitbucket.org/canna1102/" target="_blank" class="fa fa-bitbucket"></a></li>
+						</ul>
 					</div>
 				</div>
 
-				<div class = "row" style="margin: 0 30px">
-					<div class="social">
-						<li><a href="img/wechat.jpg"  target="_blank"  class="fa fa-weixin"></a></li>
-						<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"  target="_blank" class="fa fa-linkedin"></a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100006512330275" target="_blank" class="fa fa-facebook"></a></li>
-						<li><a href="https://bitbucket.org/canna1102/" target="_blank" class="fa fa-bitbucket"></a></li>
-					</div>
-				</div>
+
 				<div class="copyright"> Copyright © YANG, Yi 2015
 				</div>
 			</div>
@@ -74,11 +70,15 @@
 						<div class = "portfolio-img">
 							<img src="img/computer_vision.jpg">
 						</div>
-						<h2 class="title gray">Oriention</h2>
+						<h3 class="title gray">Orientation</h3>
 						<div class="detail">Course Project</div>
-						<h2 class="title gray">Abstrct</h2>
+						<h3 class="title gray">Abstract</h3>
 						<div class="detail">
-							We implemented 4 projects for various topics included in computer vision. They are Intelligent Scissor, Single View Metrology, Tensor Voting, and Multiple View Modeling. A simple website was built to present the results.
+							We implemented 4 projects for various topics included in Computer Vision. They are Intelligent Scissor, Single View Metrology, Tensor Voting, and Multiple View Modeling. A simple website was built to present the results.
+						</div>
+						<h3 class="title gray">Technique</h3>
+						<div class="detail">
+							Matlab, C++
 						</div>
 						<div class="btn-container">
 							<a href="launch-CV/index.html" target = "_blank" class="btn">Launch Project</a>

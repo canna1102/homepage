@@ -2,120 +2,236 @@
 <meta charset="utf-8">
 <style>
 
-    circle {
-        stroke: #fff;
-    }
-
 </style>
 <body>
-<script src="http://mbostock.github.com/d3/d3.js?2.7.4"></script>
-<script src="http://mbostock.github.com/d3/d3.geom.js?2.7.4"></script>
-<script src="http://mbostock.github.com/d3/d3.layout.js?2.7.4"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
     var margin = {top: 0, right: 0, bottom: 0, left: 0},
-            width = 500 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+            width = 600 - margin.left - margin.right,
+            height = 600 - margin.top - margin.bottom;
 
-    var padding = 5;
+    var padding = 3;
+     var nodes  = [
+            {
+                name: "Leaflet",
+                value: 45,
+                type: "Web map service"
+            }, {
+                name: "Mapbox",
+                value: 50,
+                type: "Web map service"
+            }, {
+                name: "OpenLayers",
+                value: 20,
+                type: "Web map service"
+            }, {
+                name: "Google Maps",
+                value: 15,
+                type: "Web map service"
+            }, {
+                name: "OpenStreetMap",
+                value: 20,
+                type: "Web map service"
+            }, {
+                name: "Bootstrap",
+                value: 30,
+                type: "Styles and components"
+            }, {
+                name: "Font Awesome",
+                value: 20,
+                type: "Styles and components"
+            }, {
+                name: "Semantic UI",
+                value: 15,
+                type: "Styles and components"
+            },  {
+                name: "colorBrewer",
+                value: 20,
+                type: "Styles and components"
+            }, {
+                name: "D3.js",
+                value: 45,
+                type: "Data visualization"
+            }, {
+                name: "Gephi",
+                value: 35,
+                type: "Data visualization"
+            }, {
+                name: "Linkurious.js",
+                value: 50,
+                type: "Data visualization"
+            }, {
+                name: "Mapbox GL JS",
+                value: 38,
+                type: "Data visualization"
+            }, {
+                name: "Cytoscape.js",
+                value: 20,
+                type: "Data visualization"
+            }, {
+                name: "Three.js",
+                value: 20,
+                type: "Data visualization"
+            }, {
+                name: "Npm",
+                value: 30,
+                type: "Build and deployment"
+            }, {
+                name: "Bower",
+                value: 20,
+                type: "Build and deployment"
+            }, {
+                name: "Gulp",
+                value: 30,
+                type: "Build and deployment"
+            }, {
+                name: "JSHint",
+                value: 15,
+                type: "Build and deployment"
+            }, {
+                name: "Git",
+                value: 30,
+                type: "Build and deployment"
+            }
+        ];
+    var nodes = [{"x":212.19030118407105,"y":184.66589528919113,"name":"Three.js","type":"Data visualization","value":20},{"x":347.6951310600879,"y":288.1484953700093,"name":"colorBrewer","type":"Styles and components","value":20},{"x":327.97107419933434,"y":246.3625975158003,"name":"Bootstrap","type":"Styles and components","value":30},{"x":372.57760835226577,"y":282.59556248024853,"name":"Meteor.js","type":"Development and build","value":30},{"x":180.5641850490925,"y":244.29887537394993,"name":"D3.js","type":"Data visualization","value":45},{"x":398.48404633214574,"y":237.88946034785346,"name":"Gulp","type":"Development and build","value":35},{"x":267.7178738367295,"y":197.53028889181462,"name":"Mapbox GL JS","type":"Data visualization","value":38},{"x":264.2990671354416,"y":341.08638949487505,"name":"Google Maps","type":"Web map service","value":15},{"x":168.9780497780857,"y":336.1808457184044,"name":"Linkurious.js","type":"Data visualization","value":40},{"x":245.27015320998203,"y":329.08458542086004,"name":"OpenLayers","type":"Web map service","value":20},{"x":301.557148265481,"y":336.88286671486236,"name":"Mapbox","type":"Web map service","value":30},{"x":218.2783674860041,"y":301.9859422236308,"name":"Cytoscape.js","type":"Data visualization","value":20},{"x":264.42490430232266,"y":276.9572259524219,"name":"Gephi","type":"Data visualization","value":35},{"x":317.9132753857093,"y":291.7595638600156,"name":"Font Awesome","type":"Styles and components","value":20},{"x":358.63471088838713,"y":268.4921147217533,"name":"Semantic UI","type":"Styles and components","value":15},{"x":346.89323832383593,"y":321.1363339465128,"name":"Bower","type":"Development and build","value":20},{"x":312.27197589074757,"y":380.58702613700314,"name":"OpenStreetMap","type":"Web map service","value":20},{"x":247.35662878796995,"y":399.0837180795155,"name":"Leaflet","type":"Web map service","value":45},{"x":363.8361247634851,"y":401.1147768912909,"name":"Jquery","type":"Development and build","value":35},{"x":347.39559802213734,"y":351.13265887245706,"name":"Npm","type":"Development and build","value":20},{"x":414.1790054754308,"y":326.5099303978058,"name":"Angular.js","type":"Development and build","value":45}];
+
+    var rScale = d3.scale.linear()
+            .domain([10, 50])
+            .range([0, 60]);
 
 
-    var nodes  = [
-        {
-            name: "leaflet.js",
-            radius: 50,
-            color: "#319dc4"
-        }, {
-            name: "mapbox.js",
-            radius: 40,
-            color: "#319dc4"
-        }, {
-            name: "Mapbox Gl",
-            radius: 30,
-            color: "#319dc4"
-        }, {
-            name: "OpenLayers",
-            radius: 20,
-            color: "#319dc4"
-        }, {
-            name: "Bootstrap",
-            radius: 50,
-            color: "#33ADDD"
-        }, {
-            name: "Font Awesome",
-            radius: 50,
-            color: "#33ADDD"
-        }, {
-            name: "Semantic UI",
-            radius: 30,
-            color: "#33ADDD"
-        }, {
-            name: "d3.js",
-            radius: 50,
-            color: "#56cfff"
-        }, {
-            name: "d3.js",
-            radius: 50,
-            color: "#56cfff"
-        }, {
-            name: "nvd3.js",
-            radius: 30,
-            color: "#56cfff"
-        }, {
-            name: "linkurious.js",
-            radius: 50,
-            color: "#56cfff"
-        }, {
-            name: "Cytoscape.js",
-            radius: 20,
-            color: "#56cfff"
-        }, {
-            name: "SVG/canvas",
-            radius: 40,
-            color: "#56cfff"
-        }
-    ];
+    nodes.forEach(function (node) {
+        node.radius = rScale(node.value)
+    });
+
+    var color = {
+        "Web map service": "#03B9FF",
+        "Data visualization": "#0099d5",
+        "Styles and components": "#0075A1",
+        "Build and deployment": "#006287"
+    };
+
+    d3.selection.prototype.moveToFront = function () {
+        return this.each(function () {
+            this.parentNode.appendChild(this);
+        });
+    };
+    d3.selection.prototype.moveToBack = function () {
+        return this.each(function () {
+            var firstChild = this.parentNode.firstChild;
+            if (firstChild) {
+                this.parentNode.insertBefore(this, firstChild);
+            }
+        });
+    };
+
 
     var force = d3.layout.force()
             .nodes(nodes)
             .size([width, height])
-            .gravity(.02)
+            .gravity(0.01)
             .charge(0)
             .on("tick", tick)
-            .start();
+            .start()
+            .on("end", function () {
+                var data = d3.selectAll(".individual").data();
+                var data_with_layout = data.map(function (d) {
+                    return {x: d.x, y: d.y, name: d.name, type: d.type, value: d.value}
+                }).reduce(function (prev, el) {
+                    return prev.concat(el)
+                }, []);
+                console.log(JSON.stringify(data_with_layout))
+            });
 
     var svg = d3.select("body").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
+            .attr("viewBox", "100, 100,400,400")
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var g = svg.selectAll("group")
             .data(nodes)
-            .enter().append("g");
+            .enter().append("g")
+            .attr("class", "individual");
 
     var circle = g.append("circle")
-            .attr("r", function(d) { return d.radius - 3; })
-            .style("fill", function(d) { return d.color; })
-            .style("fill-opacity", 0.8)
+            .attr("r", function (d) {
+                return d.radius;
+            })
+            .style("fill", function (d) {
+                return color[d.type];
+            })
+            .style("fill-opacity", 0.9)
             .call(force.drag);
+
+    g.append("circle")
+            .attr("pointer-events", "none")
+            .attr("class", "hover")
+            .attr("r", function (d) {
+                return d.radius - 4;
+            })
+            .style("fill", "#fff")
+            .attr("display", "none");
+
+    circle.on("mouseover", function (d) {
+        d3.select(this.parentElement)
+                .select("text")
+                .attr("display", null);
+
+        d3.select(this.parentElement)
+                .select(".hover")
+                .attr("display", null);
+
+        d3.select(this.parentElement).moveToFront();
+    });
+
+    circle.on("mouseout", function (d) {
+        if (!d.displayLabel) {
+            d3.select(this.parentElement)
+                    .select("text")
+                    .attr("display", "none");
+        }
+        d3.select(this.parentElement)
+                .select(".hover")
+                .attr("display", "none");
+    });
 
     var text = g.append("text")
             .attr("dx", 0)
-            .attr("font-size", function(d){
-                return (d.radius/2 - 10).toString()
+            .each(function (d) {
+                var font = d.radius / Math.sqrt(d.name.length) - 2;
+                d.displayLabel = d.radius > 16;
+                d.font = d.displayLabel ? font : 8;
             })
+            .attr("display", function (d) {
+                return d.displayLabel ? null : "none"
+            })
+            .attr("font-size", function (d) {
+                return d.font
+            })
+            .attr("pointer-events", "none")
+            .attr("paint-order", "stroke")
             .attr("text-anchor", "middle")
             .attr("dy", ".35em")
             .attr("fill", "#fff")
-            .text(function(d) { return d.name });
+            .attr("stroke", function (d) {
+                return color[d.type];
+            })
+            .attr("stroke-width", 4)
+            .text(function (d) {
+                return d.name
+            });
 
     function tick(e) {
+
         g.each(cluster(10 * e.alpha * e.alpha))
                 .each(collide(.5))
-                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-//                .attr("cx", function(d) { return d.x; })
-//                .attr("cy", function(d) { return d.y; });
+                .attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
     }
 
     // Move d to be adjacent to the cluster node.
@@ -123,14 +239,14 @@
         var max = {};
 
         // Find the largest node for each cluster.
-        nodes.forEach(function(d) {
-            if (!(d.color in max) || (d.radius > max[d.color].radius)) {
-                max[d.color] = d;
+        nodes.forEach(function (d) {
+            if (!(d.type in max) || (d.radius > max[d.type].radius)) {
+                max[d.type] = d;
             }
         });
 
-        return function(d) {
-            var node = max[d.color],
+        return function (d) {
+            var node = max[d.type],
                     l,
                     r,
                     x,
@@ -156,18 +272,18 @@
     // Resolves collisions between d and all other circles.
     function collide(alpha) {
         var quadtree = d3.geom.quadtree(nodes);
-        return function(d) {
+        return function (d) {
             var r = d.radius + 1 + padding,
                     nx1 = d.x - r,
                     nx2 = d.x + r,
                     ny1 = d.y - r,
                     ny2 = d.y + r;
-            quadtree.visit(function(quad, x1, y1, x2, y2) {
+            quadtree.visit(function (quad, x1, y1, x2, y2) {
                 if (quad.point && (quad.point !== d)) {
                     var x = d.x - quad.point.x,
                             y = d.y - quad.point.y,
                             l = Math.sqrt(x * x + y * y),
-                            r = d.radius + quad.point.radius + (d.color !== quad.point.color) * padding;
+                            r = d.radius + quad.point.radius + (d.type !== quad.point.type) * padding;
                     if (l < r) {
                         l = (l - r) / l * alpha;
                         d.x -= x *= l;
@@ -183,5 +299,6 @@
             });
         };
     }
+
 
 </script>

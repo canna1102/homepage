@@ -33,7 +33,7 @@ body {
 	right: 0;
 	bottom: 0;
 	overflow-y: hidden;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif!important;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
@@ -140,7 +140,7 @@ a, input[type="text"], textarea, nav.main-nav ul, .lines:before, .contact-form .
 }
 
 #profile .big-image {
-	max-width: 70%;
+	max-width: 60%;
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto 15px;
@@ -179,7 +179,7 @@ a, input[type="text"], textarea, nav.main-nav ul, .lines:before, .contact-form .
 .occupation_description{
 	margin: 15px 20px;
 	color: #555;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .hr1{
@@ -431,11 +431,9 @@ box-shadow: 0 0 1px 3px #0099d5;
     transform: translateY(-100%);
 }
 
-.chinese-name{
-	font-family: "Microsoft Yahei","微软雅黑";
-	font-family: "Microsoft Yahei","微软雅黑";
+.skill-row{
+	margin-left:36px;
 }
-
 
 
 #skills {
@@ -451,12 +449,12 @@ box-shadow: 0 0 1px 3px #0099d5;
 }
 
 .skill-item {
-	margin-bottom: 15px;
+	margin: 0 30px 15px 0;
 }
 
 .skill-title {
-	color: #bbb;
-	font-size: 16px;
+	color: #aaa;
+	font-size: 15px;
 	margin-bottom: 5px;
 }
 
@@ -473,9 +471,8 @@ box-shadow: 0 0 1px 3px #0099d5;
 	border-bottom-left-radius: 3px;
 }
 
-
-#skill-col-left{
-	border-right: 1px solid #ddd;
+.legendQuant .cell, .individual_bubble {
+	cursor: pointer;
 }
 
 .exp-title{
@@ -483,8 +480,6 @@ box-shadow: 0 0 1px 3px #0099d5;
 	font-size: 24px;
 	line-height: 40px;
 }
-
-
 
 .exp {
 	padding-left: 50px;
@@ -504,7 +499,7 @@ box-shadow: 0 0 1px 3px #0099d5;
 
 .exp .hgroup h6 {
 	font-size: 12px;
-	color: #666666;
+	color: #777;
 	font-style: italic;
 }
 
@@ -537,13 +532,13 @@ box-shadow: 0 0 1px 3px #0099d5;
 	border-radius: 100%;
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;
+	z-index: 1;
 }
 
 
-.timeline {
+.timeline, .skillset {
 	position: relative;
-	margin-top: 20px;
-	padding: 0;
+	margin-top: 30px;
 }
 
 .timeline:before {
@@ -557,7 +552,7 @@ box-shadow: 0 0 1px 3px #0099d5;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
 	bottom: 0;
 	content: "";
-	left: 18px;
+	left: 33px;
 	position: absolute;
 	top: 0;
 	width: 3px;
@@ -565,13 +560,23 @@ box-shadow: 0 0 1px 3px #0099d5;
 }
 .timeline.experience:after {
 	content: "\f0b1";
+	color: #555;
 }
-.timeline:after {
+.skillset:after {
+	content: "\f1b3";
+	color: #555;
+}
+.timeline.education:after {
+	content: '\f19d';
+	color: #555;
+}
+
+.timeline:after, .skillset:after{
 	background: #ffffff;
 	border: 3px solid #efefef;
 	font-family: FontAwesome;
 	top: 0;
-	left: 0;
+	left: 15px;
 	width: 40px;
 	height: 40px;
 	position: absolute;
@@ -580,7 +585,7 @@ box-shadow: 0 0 1px 3px #0099d5;
 	line-height: 35px;
 }
 
-.timeline:after, .exp:after{
+.timeline:after, .exp:after, .skillset:after{
 	border-radius: 100%;
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;
@@ -588,12 +593,9 @@ box-shadow: 0 0 1px 3px #0099d5;
 	-o-border-radius: 100%;
 }
 
-.timeline.education:after {
-	content: '\f19d';
-}
 
 .exp>p{
-	color: #999;
+	color: #444;
 	font-size: 13px;
 	line-height: 20px;
 }
@@ -818,8 +820,8 @@ list-style-type: none;
 }
 
 .portfolio-item .overlay h4 {
-	font-size: 16px;
-	line-height: 2em;
+	font-size: 14px;
+	line-height: 1.5em;
 	color: rgba(255,255,255,.9);
 	transition: .3s 0s all ease;
 	left: -15px;
@@ -865,12 +867,11 @@ list-style-type: none;
 
 #portfolio-case .gray {
 	color: #777;
-	margin-bottom: 15px;
 }
 
 #portfolio-case .detail {
-	font-family: 'Droid Serif', serif;
-	font-size: 18px;
+	text-align: justify;
+	font-size: 14px;
 	color: #3A4145;
 	margin-bottom: 30px;
 	line-height: 1.5em
@@ -892,8 +893,8 @@ list-style-type: none;
 	margin-top: 15px;
 }
 
-.btn-containr {
-	text-align: left;
+.btn-container{
+	margin-bottom: 50px;
 }
 
 .btn {
@@ -908,7 +909,7 @@ list-style-type: none;
 }
 
 .btn:hover {
-	color: white;
+	color: white!important;
 }
 
 .btn:focus {
@@ -1060,14 +1061,12 @@ textarea {
 }
 
 .social {
-	width: 100%;
-	padding: 5px 80px;
-	margin: 0;
 	list-style: none;
 	display: inline-block;
 }
 
 .social li {
+	padding: 8px;
 	float: left;
 	width: 33.3%;
 	text-align: center;
@@ -1086,10 +1085,6 @@ textarea {
 
 .social li a:hover {
 	border: 1px solid #0099d5;
-}
-
-.social li {
-	margin: 0;
 }
 
 /*  ----------------------------------------------------------
