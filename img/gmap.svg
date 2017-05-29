@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg id="gmap_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="400px" height="300px" viewBox="0 0 400 300" enable-background="new 0 0 400 300" xml:space="preserve">
 <g>
 	<polygon opacity="0.7" fill="#2278B5" stroke="#F9B4AF" stroke-width="0.25" enable-background="new    " points="106.481,175.747 
@@ -882,64 +882,64 @@
 	<path opacity="0.5" fill="none" stroke="#676767" stroke-width="0.7076" enable-background="new    " d="M158.847,186.872
 		c22.071,6.295,39.109,23.886,44.694,46.147"/>
 	<g id="Z69" transform="translate(1729.15802469,-1763.81481481)">
-		<text transform="matrix(1 0 0 1 -1598.4369 1914.4149)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">ct</text>
-		<text transform="matrix(1 0 0 1 -1608.4086 1923.1635)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">organs</text>
-		<text transform="matrix(1 0 0 1 -1601.1068 1931.9115)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">mri</text>
+		<text transform="matrix(1 0 0 1 -1598.4369 1914.4149)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">ct</text>
+		<text transform="matrix(1 0 0 1 -1608.4086 1923.1635)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">organs</text>
+		<text transform="matrix(1 0 0 1 -1601.1068 1931.9115)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">mri</text>
 	</g>
 	<g id="Z68" transform="translate(1978.6375,-2286.3375)">
-		<text transform="matrix(1 0 0 1 -1838.238 2398.8457)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">vector</text>
-		<text transform="matrix(1 0 0 1 -1843.1091 2407.5942)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">equation</text>
-		<text transform="matrix(1 0 0 1 -1837.9949 2416.3423)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">scalar</text>
+		<text transform="matrix(1 0 0 1 -1838.238 2398.8457)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">vector</text>
+		<text transform="matrix(1 0 0 1 -1843.1091 2407.5942)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">equation</text>
+		<text transform="matrix(1 0 0 1 -1837.9949 2416.3423)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">scalar</text>
 	</g>
 	<g id="Z63" transform="translate(2681.3852,-701.82664)">
-		<text transform="matrix(1 0 0 1 -2499.2354 929.8462)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">manuscript</text>
-		<text transform="matrix(1 0 0 1 -2495.5967 938.5942)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">accepted</text>
-		<text transform="matrix(1 0 0 1 -2495.5986 947.3423)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">obtaining</text>
+		<text transform="matrix(1 0 0 1 -2499.2354 929.8462)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">manuscript</text>
+		<text transform="matrix(1 0 0 1 -2495.5967 938.5942)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">accepted</text>
+		<text transform="matrix(1 0 0 1 -2495.5986 947.3423)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">obtaining</text>
 	</g>
 	<g id="Z62" transform="translate(2567.23545455,-3175.48772727)">
-		<text transform="matrix(1 0 0 1 -2391.2246 3223.1763)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">document</text>
-		<text transform="matrix(1 0 0 1 -2393.4116 3231.9243)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">documents</text>
-		<text transform="matrix(1 0 0 1 -2391.9546 3240.6724)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">sentences</text>
+		<text transform="matrix(1 0 0 1 -2391.2246 3223.1763)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">document</text>
+		<text transform="matrix(1 0 0 1 -2393.4116 3231.9243)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">documents</text>
+		<text transform="matrix(1 0 0 1 -2391.9546 3240.6724)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">sentences</text>
 	</g>
 	<g id="Z61" transform="translate(4437.63948718,-2260.39589744)">
-		<text transform="matrix(1 0 0 1 -4118.9531 2374.7954)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">events</text>
-		<text transform="matrix(1 0 0 1 -4123.084 2383.5435)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">analytics</text>
-		<text transform="matrix(1 0 0 1 -4116.7666 2392.2915)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">event</text>
+		<text transform="matrix(1 0 0 1 -4118.9531 2374.7954)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">events</text>
+		<text transform="matrix(1 0 0 1 -4123.084 2383.5435)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">analytics</text>
+		<text transform="matrix(1 0 0 1 -4116.7666 2392.2915)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">event</text>
 	</g>
 	<g id="Z67" transform="translate(4229.78031674,-1011.74959276)">
-		<text transform="matrix(1 0 0 1 -3927.46 1217.1763)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">diverse</text>
-		<text transform="matrix(1 0 0 1 -3935.7275 1225.9243)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">participants</text>
-		<text transform="matrix(1 0 0 1 -3925.0273 1234.6724)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">article</text>
+		<text transform="matrix(1 0 0 1 -3927.46 1217.1763)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">diverse</text>
+		<text transform="matrix(1 0 0 1 -3935.7275 1225.9243)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">participants</text>
+		<text transform="matrix(1 0 0 1 -3925.0273 1234.6724)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">article</text>
 	</g>
 	<g id="Z66" transform="translate(3248.01210526,-1927.40894737)">
-		<text transform="matrix(1 0 0 1 -3015.3198 2066.0837)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">expert</text>
-		<text transform="matrix(1 0 0 1 -3017.5063 2074.8318)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">experts</text>
-		<text transform="matrix(1 0 0 1 -3013.3716 2083.5798)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">tasks</text>
+		<text transform="matrix(1 0 0 1 -3015.3198 2066.0837)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">expert</text>
+		<text transform="matrix(1 0 0 1 -3017.5063 2074.8318)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">experts</text>
+		<text transform="matrix(1 0 0 1 -3013.3716 2083.5798)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">tasks</text>
 	</g>
 	<g id="Z65" transform="translate(743.245965753,-1500.90537671)">
-		<text transform="matrix(1 0 0 1 -697.5287 1670.672)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">renderer</text>
-		<text transform="matrix(1 0 0 1 -692.1024 1679.42)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">buffer</text>
-		<text transform="matrix(1 0 0 1 -693.6395 1688.1691)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">render</text>
+		<text transform="matrix(1 0 0 1 -697.5287 1670.672)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">renderer</text>
+		<text transform="matrix(1 0 0 1 -692.1024 1679.42)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">buffer</text>
+		<text transform="matrix(1 0 0 1 -693.6395 1688.1691)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">render</text>
 	</g>
 	<g id="Z64" transform="translate(1460.48863636,-444.445863636)">
-		<text transform="matrix(1 0 0 1 -1361.0209 691.2291)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">vertices</text>
-		<text transform="matrix(1 0 0 1 -1357.8627 699.9771)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">vertex</text>
-		<text transform="matrix(1 0 0 1 -1356.6469 708.7252)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">mesh</text>
+		<text transform="matrix(1 0 0 1 -1361.0209 691.2291)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">vertices</text>
+		<text transform="matrix(1 0 0 1 -1357.8627 699.9771)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">vertex</text>
+		<text transform="matrix(1 0 0 1 -1356.6469 708.7252)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">mesh</text>
 	</g>
 	<g id="Z612" transform="translate(1194.4862069,-2775.53505747)">
-		<text transform="matrix(1 0 0 1 -1121.7045 2852.3804)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">streamlines</text>
-		<text transform="matrix(1 0 0 1 -1119.5175 2861.1289)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">streamline</text>
-		<text transform="matrix(1 0 0 1 -1110.5238 2869.877)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">inflow</text>
+		<text transform="matrix(1 0 0 1 -1121.7045 2852.3804)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">streamlines</text>
+		<text transform="matrix(1 0 0 1 -1119.5175 2861.1289)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">streamline</text>
+		<text transform="matrix(1 0 0 1 -1110.5238 2869.877)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">inflow</text>
 	</g>
 	<g id="Z611" transform="translate(3435.64099379,-2738.45093168)">
-		<text transform="matrix(1 0 0 1 -3193.8901 2817.9998)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">interface</text>
-		<text transform="matrix(1 0 0 1 -3196.3188 2826.7478)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">command</text>
-		<text transform="matrix(1 0 0 1 -3191.9448 2835.4963)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">widgets</text>
+		<text transform="matrix(1 0 0 1 -3193.8901 2817.9998)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">interface</text>
+		<text transform="matrix(1 0 0 1 -3196.3188 2826.7478)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">command</text>
+		<text transform="matrix(1 0 0 1 -3191.9448 2835.4963)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">widgets</text>
 	</g>
 	<g id="Z610" transform="translate(2068.30608696,-1334.84069565)">
-		<text transform="matrix(1 0 0 1 -1933.2871 1516.7137)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">computation</text>
-		<text transform="matrix(1 0 0 1 -1929.6392 1525.4618)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">computing</text>
-		<text transform="matrix(1 0 0 1 -1936.2134 1534.2098)" fill="#FFFFFF" font-family="'ArialNarrow-Bold'" font-size="11">neighborhood</text>
+		<text transform="matrix(1 0 0 1 -1933.2871 1516.7137)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">computation</text>
+		<text transform="matrix(1 0 0 1 -1929.6392 1525.4618)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">computing</text>
+		<text transform="matrix(1 0 0 1 -1936.2134 1534.2098)" fill="#FFFFFF" font-family= "'Roboto Condensed', sans-serif;" font-size="11">neighborhood</text>
 	</g>
 	<script>$(&quot;.node&quot;).remove();
 	$(&quot;.edge&quot;).remove();

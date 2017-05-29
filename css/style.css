@@ -512,7 +512,8 @@ box-shadow: 0 0 1px 3px #0099d5;
 	color: #ffffff;
 	background: #0099d5;
 	border-radius: 4px;
-	-moz-border-radius: 6px -webkit-border-radius :6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius :6px;
 	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
 	padding: 1px 7px;
@@ -929,7 +930,6 @@ list-style-type: none;
 	left: 0;
 	transition: .3s .7s all ease;
 }
-
 /*  ----------------------------------------------------------
 [8. #contact]
 ----------------------------------------------------------  */
@@ -1172,6 +1172,10 @@ textarea {
 
 	.portfolio-item .overlay {
 		padding: 40px;
+	}
+
+	.portfolio-item img {
+		max-width: 400px;
 	}
 
 
