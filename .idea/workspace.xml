@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3304f948-9b36-45a2-81b6-c9c46e7f0461" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ghost.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/d3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404/fonts/icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404/fonts/icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio-case-Traffic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio-case-CV.html" afterPath="$PROJECT_DIR$/portfolio-case-CV.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio-case-Gmap.html" afterPath="$PROJECT_DIR$/portfolio-case-Gmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio-case-VisForum.html" afterPath="$PROJECT_DIR$/portfolio-case-VisForum.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homepage-at-hkust.iws" />
@@ -57,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.037037">
-              <caret line="253" column="48" selection-start-line="253" selection-start-column="48" selection-end-line="253" selection-end-column="48" />
+              <caret line="256" column="48" selection-start-line="256" selection-start-column="48" selection-end-line="256" selection-end-column="48" />
               <folding>
                 <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -76,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/portfolio-case-CV.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-40.0">
-              <caret line="93" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="28" />
+              <caret line="96" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="28" />
               <folding>
                 <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -373,9 +368,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -781,7 +776,7 @@
     <entry file="file://$PROJECT_DIR$/portfolio-case-CV.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-40.0">
-          <caret line="93" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="28" />
+          <caret line="96" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="28" />
           <folding>
             <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -801,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.037037">
-          <caret line="253" column="48" selection-start-line="253" selection-start-column="48" selection-end-line="253" selection-end-column="48" />
+          <caret line="256" column="48" selection-start-line="256" selection-start-column="48" selection-end-line="256" selection-end-column="48" />
           <folding>
             <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
