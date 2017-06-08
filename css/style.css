@@ -431,8 +431,12 @@ box-shadow: 0 0 1px 3px #0099d5;
     transform: translateY(-100%);
 }
 
+#skill-visualization {
+	text-align: center;
+}
+
 .skill-row{
-	margin-left:36px;
+	margin-left:50px;
 }
 
 
@@ -569,6 +573,11 @@ box-shadow: 0 0 1px 3px #0099d5;
 }
 .timeline.education:after {
 	content: '\f19d';
+	color: #555;
+}
+
+.timeline.award:after {
+	content: '\f091';
 	color: #555;
 }
 

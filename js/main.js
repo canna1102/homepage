@@ -215,15 +215,16 @@ console.profile();
 		var window_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 		var container_width = $("#skill-visualization").width();
 		var legendOffsetG = d3.select(".skill-legend").select("g");
-
+		console.log(window_width, container_width)
 		if (window_width <= 1024){
 			resizeToNewRow();
 		} else {
-			var svg_width = container_width - 200;
+
+			var svg_width = container_width > 600 ? container_width - 400 :　container_width - 200;
 			if (svg_width < 0) {debugger}
 			d3.select(".skill-bubble").attr("width", svg_width);
 			var svg_height = $(".skill-bubble").height();
-			if (svg_height > 240) {
+			if (svg_height > 250) {
 				d3.select(".skill-legend")
 					.attr("height", svg_height)
 					.attr("width", 190)

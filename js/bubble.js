@@ -74,12 +74,10 @@ g.append("circle")
     .attr("pointer-events", "none")
     .attr("class", "hover")
     .attr("r", function (d) {
-        return d.radius - 4;
+        return d.radius - 3;
     })
     .style("fill", "#fff")
     .attr("display", "none");
-
-
 
 circle.on("mouseover", function(d){
     d3.select(this.parentElement)
@@ -125,7 +123,7 @@ var text = g.append("text")
     .attr("dy", ".35em")
     .attr("fill", "#fff")
     .attr("stroke", function(d) { return color[d.type]; })
-    .attr("stroke-width", 4)
+    .attr("stroke-width", 3)
     .text(function(d) { return d.name });
 
 function tick(e) {

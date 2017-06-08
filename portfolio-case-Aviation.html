@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YANG, Yi - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/blue.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+
+</head>
+<body>
+
+<!-- begin .preloader -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+<div class="preloader-left"></div>
+<div class="preloader-right"></div>
+<!-- end preloader -->
+
+<!-- begin #main-container -->
+<div id="main-container">
+    <!-- begin #profile -->
+    <div id="profile" class="profile">
+        <div id="top-profile" class="expand add-expand">
+            <h1>Profile</h1>
+            <img class="small-image icon icon-left fa" src="img/photo.jpg" alt="Mobile Profile Picture">
+        </div>
+        <div class="main-content-profile">
+            <div class="close-icon-container">
+                <a href="#top-profile" class="close-icon expand-profile"></a>
+            </div>
+            <div class="summary">
+                <img class="big-image" src="img/photo.jpg" alt="Profile Picture">
+                <div class="occupation">
+                    <div class = "occupation_name">Hi, I am <span id = "name_span">YANG, Yi</span></div>
+                    <div class = "occupation_title">Data Visualization Researcher & Engineer</div>
+                    <hr class="hr1">
+                    <div class = "occupation_description">Designs and develops web-based data visualization system. Passionate at visual data analytics. Lives in Hong Kong.</div>
+
+                    <ul class="social">
+                        <li><a href="img/wechat.jpg"  target="_blank"  class="fa fa-weixin"></a></li>
+                        <li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"  target="_blank" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://bitbucket.org/canna1102/" target="_blank" class="fa fa-bitbucket"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="copyright"> Copyright © YANG, Yi 2015
+            </div>
+        </div>
+    </div>
+    <!-- end #profile -->
+    <!-- begin #portfolio-case -->
+    <div id="portfolio-case">
+        <div class="main-content">
+            <a href="index.html" class="close-icon expand"></a>
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="title">Aviation Big Data visualization</h1>
+                    <div class = "portfolio-img">
+                        <img src="img/aviation-main.png">
+                    </div>
+                    <h3 class="title gray">Orientation</h3>
+                    <div class="detail">Tianchi Contest</div>
+                    <h3 class="title gray">Abstract</h3>
+                    <div class="detail">
+                        Spatio-temporal variability has been an interesting research problem in many fields.
+
+                        In this project, we analyze the transportation data in Shenzhen with spatio-temporal methods.
+
+                        First, we match geo locations with positions along road paths by road-matching methods.
+                        After that, the vehicles run on each road at each time frame can be identified.
+                        We then calculate the traffic status (real time average / median speed of vehicles on the road map), and visualize the information on the map.
+
+                        Next, we want to provide users with a tool to inspect how the traffic is formed.
+                        To this aim, the visual analytics system is designed as shown in the image above.
+                        The left map shows traffic in a specific region set by the user. The right map plays a fast video of the trajectory of individual vehicles.
+
+                        Now users can easily explore the traffic with spatio-temporal filter and inspect the actual vehicle movements behind traffic information.
+
+                    </div>
+                    <h3 class="title gray">Technique</h3>
+                    <div class="detail">
+                        D3.js, Leaflet, Angular.js
+                    </div>
+                    <div class="btn-container">
+                        <a href="launch-Aviation/demo.mp4" target = "_blank" class="btn">Launch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end #portfolio-case -->
+</div>
+<!-- end #main-container -->
+
+<!-- JavaScript Files -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/portfolio-case.js"></script>
+</body>
+</html>
