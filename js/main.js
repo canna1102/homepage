@@ -99,12 +99,14 @@ console.profile();
 
 		var masCon = jQuery("#portfolio-container");
 
-		//	Shuffle function
-
-		masCon.shuffle({
-			itemSelector: ".portfolio-item" // the selector for the items in the grid
+		var portfolioImgs = document.querySelectorAll('.portfolio-item img');
+		imagesLoaded( portfolioImgs, function() {
+			masCon.shuffle({
+				itemSelector: ".portfolio-item" // the selector for the items in the grid
+			});
 		});
 
+		//	Shuffle function
 		$('#filter a').click(function (e) {
 			e.preventDefault();
 
