@@ -68,7 +68,7 @@
             <a href="index.html" class="close-icon expand"></a>
             <div class="row">
                 <div class="col-md-10">
-                    <h1 class="title">Logistics Distribution Analysis</h1>
+                    <h1 class="title">Last-mile Delivery Visualization</h1>
                     <div class = "portfolio-img">
                         <img src="img/logistics_main.png">
                     </div>
@@ -76,6 +76,30 @@
                     <div class="detail">Contest</div>
                     <h3 class="title gray">Abstract</h3>
                     <div class="detail">
+                        <p>
+                            In logistics, last－mile describes the delivery of packages from a transportation hub to a final destination.
+                            Efficient plan of last-mile delivery is a challenging research problem involving global optimization of time, people and route.
+                        </p>
+                        <p>
+                            In this contest, we provide visualization as tools to show deliver efficiency of different planning results.
+                            Based on the plan data, we model couriers carrying packages as moving particles on map. As overtime is a severe issue,
+                            particles are colored red to highlight these cases. With this design, analysts can quickly answer questions such as
+                            if the logistic system runs properly and where do the overtime cases happen.
+                        </p>
+
+                        <p>
+                            The visualization system is further extended to data analytics.
+                            For example, we provide visual cues to indicate if a transportation hub is located reasonably.
+                            To this aim, we map each hub on map as a circled marker, with radius reflecting the number of packages comes from it.
+                            Larger marker means the hub is taking heavier tasks than others.
+                            When user mousing over a marker, the destinations of the hub, together with a route connecting them will be shown.
+                            This design allows users to see how dense is the package destinations located in the area of a hub.
+
+                            The logistics data is also used for courier profiling. That is, we generate a score for each courier
+                            based on the punctuality and delivery efficiency. It is then interesting to find couriers of high and low scores
+                            and compare their delivery patterns.
+                        </p>
+
 
                     </div>
                     <h3 class="title gray">Technique</h3>
