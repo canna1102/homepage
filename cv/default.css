@@ -195,9 +195,7 @@ input[type="image"] + span.Head, input[type="image"] + span.SubHead {
 /*-------------------------------------*/
 /* PARAGRAPH STYLES */
 /*-------------------------------------*/
-p {
-    margin: 0 0 18px 0;
-}
+
 /* margin bottom is equal to line-height */
 p img {
     margin: 0;
@@ -287,7 +285,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 
 hr {
     clear: both;
-    margin: 17px 0 17px;
+    margin: 10px 0 10px;
     height: 0;
     border: solid #ddd;
     border-width: 1px 0 0;
@@ -333,7 +331,6 @@ img {
 /* lIST STYLES */
 /*-------------------------------------*/
 ul, ol {
-    margin-bottom: 18px;
     margin-left: 18px;
 }
 
