@@ -66,36 +66,31 @@
             <a href="index.html" class="close-icon expand"></a>
             <div class="row">
                 <div class="col-md-10">
-                    <h1 class="title">Traffic inspector</h1>
+                    <h1 class="title">DataV dashboard for real estate data</h1>
                     <div class = "portfolio-img">
-                        <img src="img/traffic_main.png">
+                        <img src="img/datav-main.jpg">
                     </div>
                     <h3 class="title gray">Orientation</h3>
-                    <div class="detail">Research Project</div>
+                    <div class="detail">Project</div>
                     <h3 class="title gray">Abstract</h3>
                     <div class="detail">
-                        <p>Spatio-temporal variability has been an interesting research problem in many fields.
-                            In this project, we analyze spatio-temporal traffic patterns with the transportation data in Shenzhen.</p>
+                        <p>In this project, we create a data visualization dashboard as a business intelligence solution for real estate data.</p>
+                        <p>
+                            This solution is built based on property transaction records crawling from internet.
+                            Everyday, we obtain three types of house price, namely, new house, second-hand house and rent house.
+                            To make the price and price variance meaningful, we design several indicators, including transaction volume, price trend, average price on map, price distribution and so on.
 
-                        <p>We take three steps to process the data.
-                            First, the geo locations collected from vehicles are bound to roads.
-                            This road-matching step makes it possible to identify which vehicle is running on which road at one time frame.
-                            After that, we calculate 'traffic' as the average / median speed of vehicles on road.
-                            At last, taking all roads and all time frames into consideration, we get a speed map reflecting the traffic conditions in real-time.</p>
-
-                        <p>Next, we want to provide users with a tool to inspect how the traffic is formed.
-                        To this aim, the visual analytics system is designed as shown in the image above.
-                        The left map shows traffic in a specific region set by the user. The right map plays a fast video of the trajectory of individual vehicles.
-
-                        Now users can easily explore the traffic with spatio-temporal filter and inspect the actual vehicle movements behind traffic information.
+                        </p>
+                        <p>
+                            The project is developed with DataV, a product powered by AlibabaCloud Computing Service.
                         </p>
                     </div>
                     <h3 class="title gray">Technique</h3>
                     <div class="detail">
-                        D3.js, Leaflet, Angular.js
+                        Node.js, MySQL, DataV
                     </div>
                     <div class="btn-container">
-                        <a href="launch-Traffic/demo.mp4" target = "_blank" class="btn">Launch Demo</a>
+                        <a href="http://218.56.12.181:8089/" target = "_blank" class="btn" style="margin-right:10px">Launch Project</a>
                     </div>
                 </div>
             </div>

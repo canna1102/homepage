@@ -74,25 +74,17 @@
                     <div class="detail">Contest</div>
                     <h3 class="title gray">Abstract</h3>
                     <div class="detail">
-                        <p>This project is invited by Tianchi Big Data Aviation innovative contest.</p>
+                        <p>This is an invited work for the Big Data in Aviation contest hosted by Tianchi, Alibaba.</p>
                         <p>
-                        In this contest, the contestants applied various optimization
-                        approaches to maximize gate usage rate.
-                        However, in terms of improvement evaluation, the objective indicators, i.e. usage of near gate, often fail
-                        to give the audience an concrete picture of what has changed.
-                        Our visualization system, appearing as a large screen application,
-                        is born to simulate the optimized gate assignment results and allow audience to see how approaches work differently.
+                            The data visualization demo shows how airplanes take use of parking resources in the Baiyun airport, Guangzhou.
+                            We convert the records of gate assignment schedule into temporal-spatio usage patterns of gates for visual analytics. We also simulate how schedule works by animating airplanes running on runways, departing and arriving at the airport.
                         </p>
                         <p>
-                        To this aim, we first model the gates and main runways of Baiyun airport from a CAD blueprint.
-                        Airplane motion orbits for each gate is further constructed to simulate airplanes departing and arriving at an apron.
-                        The output of gate assignment approach becomes an animated show after airport modeling.
-                        In additional to the objective indicators, we also visualize gate usage efficiency at real-time, by
-                        providing a shifting area graph in the system. Users can interact with each flight, for example,
-                            a rule-broke flight that is colored by the warning yellow, to open up tooltip for more information.
+                            The airport model is taken from the real CAD blueprint. We extract and reconstruct the terminal parts in the visualization system. Furthermore, motion orbits for airplanes of each gate are imitated as uniform-speed Tween animation over runways.
+                            To increase the usability of data exploration, the system allows users interacting with airplane glyphs.
+                            For example, when clicking a rule-broke flight that is colored by the warning yellow, users and find the detailed information causing the broken in the tooltip opening up.
                         </p><p>
-                        In addition, some visual analysis is performed to reveal the patterns in gate assignment. For example, we use
-                        a heat map visualization to show how frequently each gate is put into usage.
+                            The whole system is designed as a large screen data visualization for real-time gate assignment data. The screen recording of it is presented at the Yunqi conference by Alibaba.
                         </p>
                     </div>
                     <h3 class="title gray">Technique</h3>
