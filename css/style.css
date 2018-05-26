@@ -7,7 +7,7 @@
 3.	#profile
 4.	#features
 5.	#resume
-6.	#activity
+6.	#bookmark
 7.	#portfolio
 8.	#contact
 10.	#portfolio-case
@@ -336,17 +336,12 @@ a, input[type="text"], textarea, nav.main-nav ul, .lines:before, .contact-form .
 }
 
 .full .close-icon,
-.full-activity .close-icon,
+.full-bookmark .close-icon,
 .full-portfolio .close-icon,
 #profile .full-height .close-icon {
 	display: block !important;
 }
 
-.portfolio-img>img {
-	width: 70%;
-	display: block;
-	margin: auto;
-}
 /*  ----------------------------------------------------------
 [5. #resume]
 ----------------------------------------------------------  */
@@ -581,6 +576,11 @@ box-shadow: 0 0 1px 3px #0099d5;
 	color: #555;
 }
 
+.timeline.publication:after {
+	content: '\f0f6';
+	color: #555;
+}
+
 .timeline:after, .skillset:after{
 	background: #ffffff;
 	border: 3px solid #efefef;
@@ -623,7 +623,7 @@ box-shadow: 0 0 1px 3px #0099d5;
 }
 
 /*  ----------------------------------------------------------
-[6. #activity]
+[6. #bookmark]
 ----------------------------------------------------------  */
 .flexslider {
 	margin-top: 30px;
@@ -745,7 +745,7 @@ list-style-type: none;
 
 
 
-#activity {
+#bookmark {
 	background: rgba(255,255,255,.3);
 }
 /*  ----------------------------------------------------------
@@ -899,6 +899,19 @@ list-style-type: none;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+.portfolio-img>img {
+	width: 70%;
+	display: block;
+	margin: 20px auto;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	-ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	-o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
 .rating {
 	margin-top: 15px;
 }
@@ -1332,7 +1345,7 @@ textarea {
 		top: 0;
 	}
 
-	.full-activity .main-content,
+	.full-bookmark .main-content,
 	.full-portfolio .main-content {
 		top: 0;
 	}

@@ -13,7 +13,7 @@ console.profile();
 
       	$(window).load(function() {
       		$(".preloader").fadeOut("slow", function(){
-      			$("#resume, #activity, #portfolio, #contact").removeClass("absolute");
+      			$("#resume, #bookmark, #portfolio, #contact").removeClass("absolute");
       			$(".preloader-left").addClass("slide-left");
       			$(".preloader-right").addClass("slide-right");
       			setTimeout(function(){$('.tlt').textillate(); }, 1000);
@@ -35,7 +35,7 @@ console.profile();
 
 		$("#resume .expand").on("click", function() {
 			$("#resume").toggleClass("full").toggleClass("full-height");
-			$("#activity, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
+			$("#bookmark, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 
@@ -49,21 +49,21 @@ console.profile();
 			$(this).hide();
 		});
 
-		$("#activity .expand").on("click", function() {
-			$("#activity").toggleClass("full").toggleClass("full-height");
+		$("#bookmark .expand").on("click", function() {
+			$("#bookmark").toggleClass("full").toggleClass("full-height");
 			$("#resume, #portfolio, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
 
-		$("#activity .close-icon").on("click", function() {
-			$("#activity .expand").show();
+		$("#bookmark .close-icon").on("click", function() {
+			$("#bookmark .expand").show();
 			$(this).hide();
 		});
 
 		$("#portfolio .expand").on("click", function() {
 			$("#portfolio").toggleClass("full").toggleClass("full-height");
-			$("#resume, #activity, #contact").toggleClass("zero").toggleClass("zero-height");
+			$("#resume, #bookmark, #contact").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
@@ -84,7 +84,7 @@ console.profile();
 		
 		$("#contact .expand").on("click", function() {
 			$("#contact").toggleClass("full").toggleClass("full-height");
-			$("#resume, #activity, #portfolio").toggleClass("zero").toggleClass("zero-height");
+			$("#resume, #bookmark, #portfolio").toggleClass("zero").toggleClass("zero-height");
 			$("#profile").toggleClass("profile-off");
 			$(this).hide();
 		});
@@ -217,7 +217,6 @@ console.profile();
 		var window_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 		var container_width = $("#skill-visualization").width();
 		var legendOffsetG = d3.select(".skill-legend").select("g");
-		console.log(window_width, container_width)
 		if (window_width <= 1024){
 			resizeToNewRow();
 		} else {
