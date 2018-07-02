@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YANG, Yi - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/blue.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+
+</head>
+<body>
+
+<!-- begin .preloader -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+<div class="preloader-left"></div>
+<div class="preloader-right"></div>
+<!-- end preloader -->
+
+<!-- begin #main-container -->
+<div id="main-container">
+    <!-- begin #profile -->
+    <div id="profile" class="profile">
+        <div id="top-profile" class="expand add-expand">
+            <h1>Profile</h1>
+            <img class="small-image icon icon-left fa" src="img/photo.jpg" alt="Mobile Profile Picture">
+        </div>
+        <div class="main-content-profile">
+            <div class="close-icon-container">
+                <a href="#top-profile" class="close-icon expand-profile"></a>
+            </div>
+            <div class="summary">
+                <img class="big-image" src="img/photo.jpg" alt="Profile Picture">
+                <div class="occupation">
+                    <div class = "occupation_name">Hi, I am <span id = "name_span">YANG, Yi</span></div>
+                    <div class = "occupation_title">Data Visualization Researcher & Engineer</div>
+                    <hr class="hr1">
+                    <div class = "occupation_description">Designs and develops web-based data visualization system. Passionate at visual data analytics. Lives in Hong Kong.</div>
+
+                    <ul class="social">
+                        <li><a href="mailto:yyangao@connect.ust.com" target="_top"  class="fa fa-envelope-o"></a></li>
+                        <li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"  target="_blank" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://github.com/canna1102/" target="_blank" class="fa fa-github"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="copyright"> Copyright © YANG, Yi 2015
+            </div>
+        </div>
+    </div>
+    <!-- end #profile -->
+    <!-- begin #portfolio-case -->
+    <div id="portfolio-case">
+        <div class="main-content">
+            <a href="index.html" class="close-icon expand"></a>
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="title">Traffic monitoring demo</h1>
+                    <div class = "portfolio-img">
+                        <img src="img/taxi.jpg">
+                    </div>
+                    <h3 class="title gray">Orientation</h3>
+                    <div class="detail">Research Project</div>
+                    <h3 class="title gray">Abstract</h3>
+                    <div class="detail">
+                        <p>In this demo, we develop a system to simulate thousands of taxis simultaneously in Shenzhen.</p>
+                        <p>With on the system, we discover some hiring patterns in the temporal domain.
+                            For example, a morning peak is identified.
+                            First, the overall hiring ratio is low in the early morning around 5:00AM (less than 15%).
+                            The hiring ratio starts to increase at 6:00AM. Then, a local peak is reached at 8:00AM to 9:00AM (around 50%).
+                        </p>
+                    </div>
+                    <h3 class="title gray">Technique</h3>
+                    <div class="detail">
+                        Mapbox-gl.js, D3.js
+                    </div>
+                    <div class="btn-container">
+                        <a href="launch-Taxi/demo.mp4" target = "_blank" class="btn">Launch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end #portfolio-case -->
+</div>
+<!-- end #main-container -->
+
+<!-- JavaScript Files -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/portfolio-case.js"></script>
+</body>
+</html>
